@@ -607,12 +607,22 @@ img {
 .other {
   display: flex;
   flex-direction: column;
-  margin: -30px;
+  margin-top: -30px;
+}
+@media (max-width: 1439px) {
+  .other {
+    margin-top: 0;
+  }
 }
 .other__item {
   display: flex;
   margin-bottom: 30px;
   margin-right: 300px;
+}
+@media (max-width: 1439px) {
+  .other__item {
+    margin-right: 0;
+  }
 }
 .other__title {
   font-size: 26px;

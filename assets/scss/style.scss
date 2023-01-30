@@ -646,12 +646,19 @@ img {
 .other {
   display: flex;
   flex-direction: column;
-  margin: -30px;
+  margin-top: -30px;
+  @media (max-width: $wd) {
+    margin-top: 0;
+  }
 
   &__item {
     display: flex;
     margin-bottom: $space-d;
     margin-right: $space-d * 10;
+    @media (max-width: $wd) {
+      margin-right: 0;
+    }
+
   }
 
   &__title {
